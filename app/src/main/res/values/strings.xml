@@ -4,4 +4,6 @@
     <string name="grade2">Grade two</string>
     <string name="absences">Absences</string>
     <string name="calculate">Calculate</string>
+    <string name="approved">Approved</string>
+    <string name="reproved">Reproved</string>
 </resources>

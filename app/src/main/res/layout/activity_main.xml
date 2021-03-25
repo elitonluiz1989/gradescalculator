@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etGrade1" />
 
     <EditText
-        android:id="@+id/etFaults"
+        android:id="@+id/etAbsences"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
@@ -50,11 +50,11 @@
         app:layout_constraintTop_toBottomOf="@+id/etGrade2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCalculate"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="28dp"
         android:background="#009688"
         android:padding="20dp"
         android:text="@string/calculate"
@@ -62,7 +62,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etFaults" />
+        app:layout_constraintTop_toBottomOf="@+id/etAbsences" />
+
+    <TextView
+        android:id="@+id/tvResultInfo"
+        android:layout_width="359dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|top"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
