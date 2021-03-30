@@ -16,15 +16,15 @@ class MainActivity : AppCompatActivity() {
             val absences = Integer.parseInt(etAbsences.text.toString())
             val average = (grade1 + grade2) / 2
             val resultInfoText = """
-                Grades average: ${average.toString()}
-                Total absences: ${absences.toString()}
+                ${getString(R.string.grades_average)}: ${average.toString()}
+                ${getString(R.string.total_absences)}: ${absences.toString()}
             """.trimIndent()
-
+            
             if (average > 6 && absences <= 10) {
-                tvResult.text = "Approved"
+                tvResult.text = getString(R.string.approved)
                 tvResult.setTextColor(Color.WHITE)
             } else {
-                tvResult.text = "Reproved."
+                tvResult.text = getString(R.string.reproved)
                 tvResult.setTextColor(Color.RED)
             }
 
